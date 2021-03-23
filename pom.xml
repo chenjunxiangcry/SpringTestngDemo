@@ -107,8 +107,14 @@
 				<version>3.0.0-M3</version>
 				<configuration>
 					<encoding>UTF-8</encoding>
+					<argLine>-Xmx512m -XX:PermSize=128m -XX:MaxPermSize=128m
+					</argLine>
+					<!--
+					<forkMode>once</forkMode>
+					-->
+					<testFailureIgnore>true</testFailureIgnore>
 					<suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/testsuite/testng.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/testsuite/testngDemo.xml</suiteXmlFile>
                     </suiteXmlFiles>
 				</configuration>
 			</plugin>

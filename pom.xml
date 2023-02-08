@@ -38,12 +38,6 @@
 			<artifactId>spring-restdocs-mockmvc</artifactId>
 			<scope>test</scope>
 		</dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>RELEASE</version>
-            <scope>test</scope>
-        </dependency>
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
@@ -55,6 +49,21 @@
 			<artifactId>httpclient</artifactId>
 			<version>4.5.3</version>
 		</dependency>
+			<dependency>
+				<groupId>com.relevantcodes</groupId>
+				<artifactId>extentreports</artifactId>
+				<version>2.41.1</version>
+			</dependency>
+			<dependency>
+				<groupId>com.vimalselvam</groupId>
+				<artifactId>testng-extentsreport</artifactId>
+				<version>1.3.1</version>
+			</dependency>
+			<dependency>
+				<groupId>com.aventstack</groupId>
+				<artifactId>extentreports</artifactId>
+				<version>3.0.6</version>
+			</dependency>
 
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
@@ -66,6 +75,16 @@
 			<artifactId>reportng</artifactId>
 			<version>1.1.4</version>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>reportng</artifactId>
+			<version>1.2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.sdrss</groupId>
+			<artifactId>reportng</artifactId>
+			<version>2.7.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.google.guava</groupId>
@@ -117,11 +136,12 @@
 				<version>3.0.0-M3</version>
 				<configuration>
 					<encoding>UTF-8</encoding>
-					<argLine>-Xmx512m -XX:PermSize=128m -XX:MaxPermSize=128m
-					</argLine>
 					<!--
-					<forkMode>once</forkMode>
-					-->
+                <argLine>-Xmx512m -XX:PermSize=128m -XX:MaxPermSize=128m
+                </argLine>
+
+                <forkMode>once</forkMode>
+                -->
 					<testFailureIgnore>true</testFailureIgnore>
 					<suiteXmlFiles>
                         <suiteXmlFile>src/test/resources/testsuite/testngDemo.xml</suiteXmlFile>

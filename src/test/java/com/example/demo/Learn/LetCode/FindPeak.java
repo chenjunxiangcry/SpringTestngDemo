@@ -1,4 +1,4 @@
-package com.example.demo.LetCode;
+package com.example.demo.Learn.LetCode;
 
 public class FindPeak {
     public static int findPeakElement(int[] nums, int numsSize){

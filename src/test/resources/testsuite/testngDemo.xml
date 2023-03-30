@@ -2,8 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="testngDemo" verbose="1" preserve-order="true">
     <listeners>
-        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
-        <listener class-name="org.testng.reporters.FailedReporter"></listener>
+        <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"></listener>
     </listeners>
 
     <test name="MockTest" >

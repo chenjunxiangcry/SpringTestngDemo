@@ -21,7 +21,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -91,6 +94,20 @@
 			<artifactId>guava</artifactId>
 			<version>15.0</version>
 		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid-spring-boot-starter</artifactId>
+			<version>1.2.8</version>
+		</dependency>
 
 		<dependency>
 			<groupId>com.google.inject</groupId>
@@ -139,7 +156,6 @@
 					<!--
                 <argLine>-Xmx512m -XX:PermSize=128m -XX:MaxPermSize=128m
                 </argLine>
-
                 <forkMode>once</forkMode>
                 -->
 					<testFailureIgnore>true</testFailureIgnore>
@@ -150,5 +166,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>

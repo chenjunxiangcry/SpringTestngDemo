@@ -18,26 +18,28 @@ import java.net.URISyntaxException;
  */
 @SpringBootTest
 public class MockTest extends BaseTestCase {
-        @Autowired
-       public HttpInvoker httpInvoker;
+    @Autowired
+    public HttpInvoker httpInvoker;
 
-        @Test(description = "访问百度网站，预期成功")
+    @Test(description = "访问百度网站，预期成功")
 
-       public void testAccessBaidu() throws IOException, URISyntaxException {
-            String body = httpInvoker.get("https://www.baidu.com",null,null);
-            System.out.println(body);
-            Reporter.log("This is testcase ,case name is accessBaidu");
-            Assert.fail("access baidu fail");
-        }
+    public void testAccessBaidu() throws IOException, URISyntaxException {
+        String body = httpInvoker.get("https://www.baidu.com", null, null);
+        System.out.println(body);
+        Reporter.log("This is testcase ,case name is accessBaidu");
+        Assert.fail("access baidu fail");
+    }
+
     @Test
     public void testAccessSina() throws IOException, URISyntaxException {
-        String body = httpInvoker.get("https://www.sina.com",null,null);
+        String body = httpInvoker.get("https://www.sina.com", null, null);
         System.out.println(body);
 
     }
+
     @Test
     public void testAccessTencent() throws IOException, URISyntaxException {
-        String body = httpInvoker.get("https://www.qq.com",null,null);
+        String body = httpInvoker.get("https://www.qq.com", null, null);
         System.out.println(body);
 
     }

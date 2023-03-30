@@ -169,7 +169,7 @@ public class HttpInvoker {
     }
 
 
-    public static String postJsonStr(String url, String jsonStr) throws IOException {
+    public static String postJsonStr(String url,String jsonStr) throws IOException {
         HttpPost httpPost = new HttpPost(url);
         httpPost.setHeader("User-Agent", "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11");
         httpPost.setHeader("Content-Type", "application/json");

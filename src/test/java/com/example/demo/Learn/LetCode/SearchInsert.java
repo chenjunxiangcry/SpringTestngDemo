@@ -1,4 +1,4 @@
-package com.example.demo.LetCode;
+package com.example.demo.Learn.LetCode;
 
 public class SearchInsert {
     public static int searchInsert(int[] nums, int target) {

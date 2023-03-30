@@ -1,4 +1,4 @@
-package com.example.demo.LetCode;
+package com.example.demo.Learn.LetCode;
 
 import com.fasterxml.jackson.core.JsonEncoding;
 
